@@ -89,14 +89,14 @@ This repository contains my work from an Autorium course by Angela Yu. The cours
 
 ## 📁 Folder Structure
 
-```text
-01-Fundamentals/
-02-Control_Flow/
-03-Functions/
-04-Data_Structures/
-05-Advanced_JavaScript/
-Projects/
-.gitignore
-README.md
-LICENSE
+```
+├── 01-Fundamentals/
+├── 02-Control_Flow/
+├── 03-Functions/
+├── 04-Data_Structures/
+├── 05-Advanced_JavaScript/
+├── Projects/
+├── .gitignore
+├── README.md
+└── LICENSE
 ```

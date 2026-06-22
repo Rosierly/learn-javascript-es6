@@ -70,3 +70,74 @@ console.log("Hello");
 - macOS: `Cmd + /`
 ---
 
+## Lesson 3 - Data Types
+
+### Data Types
+
+#### String
+###### Represents textual data.
+```js
+"Hello"
+"42"
+```
+
+#### Number
+###### Represents both integers and decimal numbers. In JavaScript, integers and floats both belong to the **Number** data type.
+```js
+23      // Integer
+3.1415  // Float (decimal number)
+```
+
+#### Boolean
+###### Represents one of two values: `true` or `false`.
+```js
+true
+false
+```
+---
+
+### The `typeof` Operator
+###### Use `typeof` to check the data type of a value.
+```js
+typeof("Hello"); // "string"
+typeof(42);      // "number"
+typeof(true);    // "boolean"
+```
+
+```js
+// Examples
+console.log(typeof("3" + "2"));  // output: string
+console.log(typeof(23 + 34 + 12));  // output: number
+```
+---
+
+### Automatic Type Conversion (Coercion)
+###### JavaScript can automatically convert values from one data type to another.
+
+#### String Concatenation
+###### When a string is combined with another value using the `+` operator, the result is a string.
+```js
+console.log("3" + 1);  // "31"
+console.log(typeof("3" + 1));  // "string"
+
+console.log(3.1415 + "2");  // "3.14152"
+console.log(typeof(3.1415 + "2"));  // "string"
+```
+
+#### Mathematical Operations
+###### Operators such as `-`, `*`, and `/` convert strings to numbers when possible.
+```js
+console.log("3" - 1);  // 2
+console.log(typeof("3" - 1));  // "number"
+```
+---
+
+### Manual Type Conversion
+###### Convert values explicitly using built-in functions.
+```js
+Number("42");  // 42
+String(123);   // "123"
+Boolean(0);    // false
+// Note: Conversion functions begin with a capital letter.
+```
+---

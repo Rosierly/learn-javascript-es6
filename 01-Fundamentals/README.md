@@ -43,3 +43,30 @@ console.log("My &quot;String&quot;"); // output: My &quot;String&quot;
 ```
 ---
 
+
+## Lesson 2 - Commenting
+
+### Comments
+###### Comments are used to add notes to your code and are ignored by JavaScript.
+
+#### Single-Line Comment
+```js
+// This is a comment
+console.log("Hello");
+console.log("Bye");  // This is an inline comment
+```
+
+#### Multi-Line Comment
+```js
+/*
+This is a
+multi-line comment
+*/
+console.log("Hello");
+```
+
+#### Shortcuts:
+- Windows/Linux: `Ctrl + /`  
+- macOS: `Cmd + /`
+---
+

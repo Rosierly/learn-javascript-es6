@@ -264,3 +264,87 @@ null === undefined; // false
 // === compares both value and type, so they are different.
 ```
 ---
+
+
+## Lesson 5 - Variables
+
+### Variable Naming Conventions
+###### Different programming languages and situations use different naming conventions.
+```js
+// Python
+my_variable_name  // snake_case
+
+// JavaScript
+myVariableName    // camelCase
+
+// Classes
+MyClass           // PascalCase
+
+// Constants
+MAX_USERS         // UPPER_SNAKE_CASE
+```
+- Use **camelCase** for variables and functions.
+- Use **PascalCase** for class names.
+- Use **UPPER_SNAKE_CASE** for constants and configuration values.
+---
+
+### Variable Naming Rules
+- #### Rule 1: Must Start with a Letter, _, or $. 
+###### Variable names cannot begin with a number.
+```js
+let myAge = 12;
+let _counter = 0;
+let $price = 5;
+
+let 1stNumber = 12;  // ❌ Invalid
+```
+
+- #### Rule 2: Variable Names Are Case-Sensitive.
+###### JavaScript treats uppercase and lowercase letters as different characters.
+```js
+let age = 12;
+let Age = 20;
+
+console.log(age);  // 12
+console.log(Age);  // 20
+// `age` and `Age` are different variables.
+```
+
+- #### Rule 3: Reserved Keywords Cannot Be Used
+###### JavaScript keywords already have special meanings and cannot be used as variable names.
+```js
+let name = "Angela";
+
+let let = 123;  // ❌ Invalid
+let if = 5;     // ❌ Invalid
+```
+---
+
+### Creating Variables
+###### Variables are named containers used to store data.
+```js
+let age = 12;
+let name = "Angela";
+let isStudent = true;
+
+// Storing Values in Variables (result of an expression)
+let dataTypeOfHello = typeof("Hello");
+
+console.log(dataTypeOfHello); // output: string
+```
+---
+
+### Variable Reassignment
+###### Variables declared with `let` can be assigned a new value later.
+```js
+let age = 12;
+
+// Some time later...
+age = 13;
+
+console.log(age);  // output: 13
+```
+---
+
+
+

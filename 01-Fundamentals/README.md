@@ -595,3 +595,23 @@ grades = [1, 2, 3];
 ```
 ---
 
+## Lesson 9 - Inputs
+
+### Using `.length` with Strings
+###### The `.length` property returns the number of characters in a string.
+```js
+const name = "Jane";
+
+console.log(name.length);  // output: 4
+```
+---
+
+### `.length` with Arrays
+###### `.length` can also be used on arrays to get the number of items.
+```js
+let inputs = ["Tom", "Angela", "Emma"];
+
+console.log(inputs.length);  // output: 3
+```
+---
+

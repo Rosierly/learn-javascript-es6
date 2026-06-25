@@ -528,3 +528,70 @@ console.log(`Five times three is ${5 * 3}`);  // output: Five times three is 15
     console.log(name);  // Angela
     ```
 ---
+
+## Lesson 8 - Arrays
+
+### Storing Individual Pieces of Data
+###### A variable can store a single value, such as a string, number, or boolean.
+```js
+const child1 = "Jane";
+console.log(child1);
+```
+---
+
+### Storing Multiple Related Pieces of Data
+###### Arrays store multiple values in a single variable. Arrays can contain different data types, although it's usually best practice to keep related data of the same type together.
+```js
+const children = ["Jane", "Ben", "Tom"];
+const mixedArray = ["Jane", 25, true];  // Valid JavaScript
+```
+---
+
+### Accessing Array Items (Using Indexes)
+###### Arrays use zero-based numbering, meaning the first item starts at index 0.
+```js
+let children = ["Jane", "Ben", "Tom"];
+//               0       1      2
+
+const tom = children[2];
+console.log(tom);  // "Tom"
+```
+---
+
+### Accessing Non-Existing Indexes
+###### If you try to access an index that doesn't exist, JavaScript returns undefined.
+```js
+const fruits = ["Apple", "Pear", "Orange"];
+
+const lastFruit = fruits[2 + 1];  // calculations can be placed inside the brackets []
+console.log(lastFruit);  // undefined
+```
+---
+
+### Modifying Items in an Array
+###### You can change individual items by assigning a new value to a specific index.
+```js
+const grades = ["A", "A", "B"];
+
+grades[2] = "A";
+
+console.log(grades);  // ["A", "A", "A"]
+```
+---
+
+### Arrays and `const`
+###### Using const makes the array reference constant, not the contents of the array.
+```js
+const grades = ["A", "A", "B"];
+
+// ✅ Allowed:
+grades[2] = "A";
+grades.push("B");  // add an item
+
+
+// ❌ Not Allowed:
+grades = "Hello";
+grades = [1, 2, 3];
+```
+---
+

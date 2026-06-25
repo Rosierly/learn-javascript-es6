@@ -346,5 +346,60 @@ console.log(age);  // output: 13
 ```
 ---
 
+## Lesson 6 - Constants
 
+### Constants - `const` Keyword
+###### Constants are named containers whose values cannot be reassigned after they are created.
+```js
+const MY_NAME = "Angela";
+
+// Attempting to assign a new value to a constant will result in an error.
+MY_NAME = "Bella"; // ❌ TypeError
+```
+---
+
+### Naming Constants
+###### Constants are typically written using UPPER_SNAKE_CASE.
+```js
+const PI = 3.141592653589793;
+const GOOGLE_URL = "https://www.google.com";
+const MAX_USERS = 100;
+// This naming convention makes constants easy to distinguish from regular variables.
+```
+---
+
+### `let` vs `const`
+- #### Reassignment
+    ###### Variables declared with let can be reassigned, while constants declared with const cannot.
+    ```js
+    let x = 2;
+    x = 3;
+
+    const y = 2;
+    y = 3; // ❌ TypeError
+    ```
+
+- #### Initialization
+    ###### A let variable can be declared without a value. A const must be initialized when it is declared.
+    ```js
+    let username;
+    username = "Angela";
+
+    const username = "Angela";
+    const username;  // ❌ SyntaxError
+    ```
+---
+
+### The `var` Keyword
+###### var is the older way of declaring variables in JavaScript. It was the primary method before let and const were introduced in ES6 (ECMAScript 2015).
+```js
+var name = "Angela";
+
+// Unlike let and const, variables declared with var can be redeclared in the same scope.
+var name = "Angela";
+var name = "Bella";  // The second declaration replaces the first one
+
+// Avoid `var` in modern code, use `let` and `const`.
+```
+---
 

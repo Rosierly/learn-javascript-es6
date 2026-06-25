@@ -403,3 +403,128 @@ var name = "Bella";  // The second declaration replaces the first one
 ```
 ---
 
+## Lesson 7 - Strings
+
+### Creating Strings
+###### Strings represent textual data and can be created using double quotes, single quotes, or backticks.
+```js
+let doubleQuoteString = "This is a string";
+let singleQuoteString = 'This is also a string';
+let backtickString = `This is yet another string`;
+// All three create strings. Backticks are special because they support interpolation and multi-line strings.
+```
+
+#### String Delimiters
+```js
+// JavaScript supports three string delimiters.
+"Double Quotes"
+'Single Quotes'
+`Backticks`
+```
+---
+
+### New Line (\n)
+###### Inserts a line break inside a string.
+```js
+console.log("Hello\nWorld");
+// Output:
+// Hello
+// World
+```
+---
+
+### Tab Space (\t)
+###### Inserts a horizontal tab space.
+```js
+console.log("Hello\tWorld");
+```
+---
+
+### Backslash (`\\`)
+###### Displays a literal backslash.
+```js
+console.log("C:\\Users\\Angela");  // output: C:\Users\Angela
+```
+---
+
+### Escape Characters
+###### A backslash (`\`) allows special characters to be inserted into strings.
+```js
+// Common Escape Characters
+console.log("This \" contains a quote");
+console.log("Hello\nWorld");
+console.log("Hello\tWorld");
+console.log("C:\\Users\\Angela");
+```
+---
+
+### Template Literals 
+###### Template literals are strings enclosed in backticks (`).
+### Variable Interpolation
+###### Insert variables directly into a string using ${}.
+```js
+let age = 12;
+
+console.log(`I am ${age} years old.`);  // output: I am 12 years old.
+
+// JavaScript expressions can be evaluated inside ${}.
+console.log(`Five times three is ${5 * 3}`);  // output: Five times three is 15
+
+// Note:
+// ${} is treated as normal text when used inside single or double quotes.
+```
+---
+
+### Multi-Line Strings
+- #### Using Template Literals
+    ###### Backtick strings can span multiple lines without escape characters.
+    ```js
+    `Template literals
+    can be multi-line`
+    ```
+
+- #### Using New Line Characters
+    ###### Multi-line output can also be created with \n.
+    ```js
+    console.log("I\nCan\nPrint\nMultiple\nLines");
+    ```
+---
+
+### Template Literals vs Concatenation
+###### Template literals are usually easier to read than string concatenation.
+
+- #### Concatenation
+    ```js
+    let firstName = "Angela";
+    let lastName = "Yu";
+
+    console.log(firstName + " " + lastName);
+    ```
+
+- #### Template Literal
+    ```js
+    let firstName = "Angela";
+    let lastName = "Yu";
+
+    console.log(`${firstName} ${lastName}`);
+    ```
+---
+
+### Additional Notes
+- #### Accessing Characters
+    ```js
+    let name = "Angela";
+
+    console.log(name[0]);  // A
+    console.log(name[1]);  // n
+    ```
+
+- #### Strings Are Immutable
+    ```js
+    let name = "Angela";
+
+    name[0] = "B";
+
+    console.log(name);  // Angela
+    ```
+---

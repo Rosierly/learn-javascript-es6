@@ -615,3 +615,86 @@ console.log(inputs.length);  // output: 3
 ```
 ---
 
+## Lesson 11 - Randomness
+
+### Pseudo-Random Numbers
+###### Computers do not generate truly random numbers. Instead, they use mathematical formulas called Pseudo-Random Number Generators (PRNGs).
+---
+
+### `Math.random()`
+###### Returns a random number in the range `[0, 1)`.
+```js
+let randomNumber = Math.random();
+console.log(randomNumber);
+// Example outputs:
+// 0.123456789
+// 0.987654321
+// 0.000001234
+
+// Math.random() will never return 1.
+```
+
+#### Random Number Between 0 and 100
+```js
+// Multiply the result by 100
+console.log(Math.random() * 100);
+// Examples:
+// 34.56
+// 89.12
+// 0.45
+
+// Range:
+// 0 <= number < 100
+```
+---
+
+### Math.floor()
+###### Removes the decimal portion of a number and rounds down to the nearest integer.
+```js
+let n = 36.9999999999999999;
+let integer = Math.floor(n);
+console.log(integer);  // 36
+
+// Examples:
+Math.floor(5.9);  // 5
+Math.floor(5.1);  // 5
+Math.floor(5.0);  // 5
+```
+
+#### Example - Get Random Whole Number Between 1 and 36.
+```js
+let num = Math.floor(Math.random() * 36) + 1
+```
+---
+
+### Selecting a Random Item from an Array
+###### Use a random integer as an array index.
+```js
+// Example 1
+let fruitsArray = ["Apple", "Banana", "Cherry"];
+
+let randomIndex = Math.floor(Math.random() * fruitsArray.length);
+
+let randomFruit = fruitsArray[randomIndex];
+
+console.log(randomFruit);
+// Possible outputs:
+// Apple
+// Banana
+// Cherry
+```
+
+```js
+// Example 2
+let friends = ["Angela", "Mary", "Tony", "John"];
+
+let randomIndex = Math.floor(Math.random() * friends.length);
+
+console.log(`${friends[randomIndex]} will pay the bill.`);
+// Possible outputs:
+// Angela will pay the bill.
+// Tony will pay the bill.
+// Mary will pay the bill.
+```
+---
+

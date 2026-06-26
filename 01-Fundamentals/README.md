@@ -1,6 +1,6 @@
 # Fundamentals: Lessons 1–8 & 10–11
 
-## Lesson 1 - Console Log
+## 🔹 Lesson 1 - Console Log
 
 ### Console Output
 ###### Print text in the console (output area).
@@ -44,7 +44,7 @@ console.log("My &quot;String&quot;"); // output: My &quot;String&quot;
 ---
 
 
-## Lesson 2 - Commenting
+## 🔹 Lesson 2 - Commenting
 
 ### Comments
 ###### Comments are used to add notes to your code and are ignored by JavaScript.
@@ -70,7 +70,7 @@ console.log("Hello");
 - macOS: `Cmd + /`
 ---
 
-## Lesson 3 - Data Types
+## 🔹 Lesson 3 - Data Types
 
 ### Data Types
 
@@ -142,7 +142,7 @@ Boolean(0);    // false
 ```
 ---
 
-## Lesson 4 - Arithmetic Operators
+## 🔹 Lesson 4 - Arithmetic Operators
 
 ### Basic Arithmetic Operators
 ###### JavaScript provides several operators for performing mathematical calculations.
@@ -266,7 +266,7 @@ null === undefined; // false
 ---
 
 
-## Lesson 5 - Variables
+## 🔹 Lesson 5 - Variables
 
 ### Variable Naming Conventions
 ###### Different programming languages and situations use different naming conventions.
@@ -346,7 +346,7 @@ console.log(age);  // output: 13
 ```
 ---
 
-## Lesson 6 - Constants
+## 🔹 Lesson 6 - Constants
 
 ### Constants - `const` Keyword
 ###### Constants are named containers whose values cannot be reassigned after they are created.
@@ -403,7 +403,7 @@ var name = "Bella";  // The second declaration replaces the first one
 ```
 ---
 
-## Lesson 7 - Strings
+## 🔹 Lesson 7 - Strings
 
 ### Creating Strings
 ###### Strings represent textual data and can be created using double quotes, single quotes, or backticks.
@@ -529,7 +529,7 @@ console.log(`Five times three is ${5 * 3}`);  // output: Five times three is 15
     ```
 ---
 
-## Lesson 8 - Arrays
+## 🔹 Lesson 8 - Arrays
 
 ### Storing Individual Pieces of Data
 ###### A variable can store a single value, such as a string, number, or boolean.
@@ -595,7 +595,7 @@ grades = [1, 2, 3];
 ```
 ---
 
-## Lesson 9 - Inputs
+## 🔹 Lesson 9 - Inputs
 
 ### Using `.length` with Strings
 ###### The `.length` property returns the number of characters in a string.
@@ -615,7 +615,7 @@ console.log(inputs.length);  // output: 3
 ```
 ---
 
-## Lesson 11 - Randomness
+## 🔹 Lesson 11 - Randomness
 
 ### Pseudo-Random Numbers
 ###### Computers do not generate truly random numbers. Instead, they use mathematical formulas called Pseudo-Random Number Generators (PRNGs).

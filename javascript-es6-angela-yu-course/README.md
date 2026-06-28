@@ -1,10 +1,13 @@
 # Learn JavaScript ES6
 
-This repository contains my work from an Autorium course by Angela Yu. The course blends theory with practical, project-based learning, and consists of 31 lessons organized in 5 sections outlined below.
+This folder contains my work from Angela Yu's JavaScript ES6 course on Autorium, which consists of 31 lessons across five sections.
+
+**Update:**   
+I completed the Fundamentals section and the Flash Card Project before the course became inaccessible due to server issues. The remaining sections are listed below for reference.
 
 ## Contents
 
-### 01 - Fundamentals
+### ✅ 01 - Fundamentals (Completed)
 *Beginner core JavaScript concepts.*
 
 | #  | Topic                |
@@ -21,7 +24,7 @@ This repository contains my work from an Autorium course by Angela Yu. The cours
 
 ---
 
-### 02 - Control Flow
+### ⏸️ 02 - Control Flow (Not Completed)
 *Program flow and decision-making.*
 
 | #  | Topic              |
@@ -36,7 +39,7 @@ This repository contains my work from an Autorium course by Angela Yu. The cours
 
 ---
 
-### 03 - Functions
+### ⏸️ 03 - Functions (Not Completed)
 *Building reusable logic.*
 
 | #  | Topic                   |
@@ -49,7 +52,7 @@ This repository contains my work from an Autorium course by Angela Yu. The cours
 
 ---
 
-### 04 - Data Structures
+### ⏸️ 04 - Data Structures (Not Completed)
 *Storing and manipulating data.*
 
 | #  | Topic           |
@@ -61,7 +64,7 @@ This repository contains my work from an Autorium course by Angela Yu. The cours
 
 ---
 
-### 05 - Advanced JavaScript
+### ⏸️ 05 - Advanced JavaScript (Not Completed)
 *Intermediate and advanced concepts.*
 
 | #  | Topic    |
@@ -74,29 +77,25 @@ This repository contains my work from an Autorium course by Angela Yu. The cours
 ##  Projects
 *Projects that focus exclusively on practicing JavaScript.*
 
-### 10 - Flash Card Project
-> Project Description
+### ✅ 10 - Flash Card Project (Completed)
+> A simple JavaScript flashcard app for practicing coding interview questions with interactive card navigation and progress tracking.
 ---
 
-### 20 - WRDL Project
+### ⏸️ 20 - WRDL Project (Not Completed)
 > Project Description
 
 ---
 
-### 31 - Graduation Project
+### ⏸️ 31 - Graduation Project (Not Completed)
 > Project Description
 
 
 ## 📁 Folder Structure
 
 ```
+javascript-es6-angela-yu-course/
 ├── 01-Fundamentals/
-├── 02-Control_Flow/
-├── 03-Functions/
-├── 04-Data_Structures/
-├── 05-Advanced_JavaScript/
-├── Projects/
-├── .gitignore
-├── README.md
-└── LICENSE
+├── Projects/ 
+│ └── 10-Flash_Card_Project/
+└── README.md 
 ```

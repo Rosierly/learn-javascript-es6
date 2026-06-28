@@ -1,4 +1,4 @@
-# JavaScript Learning Journey
+# Learn JavaScript ES6
 
 This repository contains my JavaScript learning journey through multiple courses.
 

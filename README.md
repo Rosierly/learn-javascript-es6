@@ -12,7 +12,7 @@ I originally began with Angela Yu's JavaScript ES6 course on Autorium. After the
 - Status: Incomplete
 - Progress: Completed the introductory lessons and the first mini-project before the course became unavailable.
 
-📄 **Detailed README:** [javascript-es6-angela-yu-course](./javascript-es6-angela-yu-course)
+**Detailed README:** [javascript-es6-angela-yu-course](./javascript-es6-angela-yu-course)
 
 ---
 
@@ -20,7 +20,7 @@ I originally began with Angela Yu's JavaScript ES6 course on Autorium. After the
 
 - Status: In Progress
 
-📄 **Detailed README:** [javascript-bro-code-course](./javascript-bro-code-course)
+**Detailed README:** [javascript-bro-code-course](./javascript-bro-code-course)
 
 
 ## What this repository includes

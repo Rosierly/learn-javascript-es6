@@ -1,102 +1,41 @@
-# Learn JavaScript ES6
+# JavaScript Learning Journey
 
-This repository contains my work from an Autorium course by Angela Yu. The course blends theory with practical, project-based learning, and consists of 31 lessons organized in 5 sections outlined below.
+This repository contains my JavaScript learning journey through multiple courses.
 
-## Contents
+I originally began with Angela Yu's JavaScript ES6 course on Autorium. After the platform experienced extended server issues that prevented me from continuing, I moved on to another JavaScript course.
 
-### 01 - Fundamentals
-*Beginner core JavaScript concepts.*
 
-| #  | Topic                |
-|----|----------------------|
-| 01 | Console Log          |
-| 02 | Commenting           |
-| 03 | Data Types           |
-| 04 | Arithmetic Operators |
-| 05 | Variables            |
-| 06 | Constants            |
-| 07 | Strings              |
-| 09 | Inputs               |
-| 11 | Randomness           |
+## Courses
+
+### 1. JavaScript ES6 – Angela Yu (Incomplete)
+
+- Status: Incomplete
+- Progress: Completed the introductory lessons and the first mini-project before the course became unavailable.
+
+📄 **Detailed README:** [javascript-es6-angela-yu-course](./javascript-es6-angela-yu-course/README.md)
 
 ---
 
-### 02 - Control Flow
-*Program flow and decision-making.*
+### 2. Bro Code - Full JavaScript Course
 
-| #  | Topic              |
-|----|--------------------|
-| 12 | Comparators        |
-| 13 | Conditionals       |
-| 14 | Logical Operators  |
-| 15 | Switch Statements  |
-| 17 | While Loops        |
-| 18 | For Loops          |
-| 19 | Scope              |
+- Status: In Progress
 
----
-
-### 03 - Functions
-*Building reusable logic.*
-
-| #  | Topic                   |
-|----|-------------------------|
-| 16 | Functions               |
-| 21 | Arrow Functions         |
-| 22 | Clean Code              |
-| 29 | Advanced Functions      |
-| 30 | Higher Order Functions  |
-
----
-
-### 04 - Data Structures
-*Storing and manipulating data.*
-
-| #  | Topic           |
-|----|-----------------|
-| 08 | Arrays          |
-| 23 | Objects         |
-| 24 | Array Methods   |
-| 25 | String Methods  |
-
----
-
-### 05 - Advanced JavaScript
-*Intermediate and advanced concepts.*
-
-| #  | Topic    |
-|----|----------|
-| 26 | Classes  |
-| 27 | Dates    |
-| 28 | Time     |
+📄 **Detailed README:** [javascript-bro-code-course](./javascript-bro-code-course/README.md)
 
 
-##  Projects
-*Projects that focus exclusively on practicing JavaScript.*
-
-### 10 - Flash Card Project
-> Project Description
----
-
-### 20 - WRDL Project
-> Project Description
-
----
-
-### 31 - Graduation Project
-> Project Description
+## What this repository includes
+- Course notes and exercises
+- JavaScript fundamentals practice
+- Small projects built during learning
 
 
 ## 📁 Folder Structure
 
 ```
-├── 01-Fundamentals/
-├── 02-Control_Flow/
-├── 03-Functions/
-├── 04-Data_Structures/
-├── 05-Advanced_JavaScript/
-├── Projects/
-├── .gitignore
+learn-javascript-es6/
+├── javascript-es6-angela-yu-course/
+├── javascript-bro-code-course/
 ├── README.md
-└── LICENSE
+├── LICENSE
+└── .gitignore
 ```

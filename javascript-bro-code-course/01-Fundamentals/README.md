@@ -512,5 +512,5 @@ console.log(Math.random());  // output: 0.234567... (example)
 ###### A simple program that increases, decreases, and resets a number using buttons.
 
 ### ⭐ Random Number Generator Project
-###### A program that generates a random number using `Math.random()` and math formulas.
+###### A program that generates three random numbers using `Math.random()` and math formulas.
 ---

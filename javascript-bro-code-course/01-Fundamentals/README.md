@@ -296,12 +296,12 @@ document.getElementById("mySubmit").onclick = function () {
     // undefined → false (Boolean)
     ```
 
-    #### Key Rules Summary
-    - `"text"` → NaN (when converted to Number)
-    - `""` → 0 (Number), false (Boolean)
-    - Any non-empty string → true (Boolean)
-    - `undefined` → NaN / "undefined" / false depending on conversion
-    ---
+#### Key Rules Summary
+- `"text"` → NaN (when converted to Number)
+- `""` → 0 (Number), false (Boolean)
+- Any non-empty string → true (Boolean)
+- `undefined` → NaN / "undefined" / false depending on conversion
+---
 
 ## Constants 
 

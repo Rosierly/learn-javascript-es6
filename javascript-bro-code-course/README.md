@@ -4,7 +4,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ## Contents
 
-### [01 - JavaScript Fundamentals](./01-Fundamentals)
+### [01 - JavaScript Fundamentals](./01-Fundamentals/)
 *Learn variables, data types, operators, and basic interaction.*
 
 | # | Topic |
@@ -21,7 +21,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [02 - Control Flow](./02-Control-Flow)
+### [02 - Control Flow](./02-Control-Flow/)
 *Make decisions and repeat code.*
 
 | # | Topic |
@@ -38,7 +38,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [03 - Strings & Functions](./03-Functions-Strings)
+### [03 - Strings & Functions](./03-Functions-Strings/)
 *Learn how to write reusable code and manipulate text.*
 
 | # | Topic |
@@ -52,7 +52,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [04 - Arrays & Functional Programming](./04-Arrays)
+### [04 - Arrays & Functional Programming](./04-Arrays/)
 *Work efficiently with collections of data.*
 
 | # | Topic |
@@ -72,7 +72,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [05 - Object-Oriented JavaScript](./05-OOP)
+### [05 - Object-Oriented JavaScript](./05-OOP/)
 *Understand how JavaScript models real-world objects.*
 
 | # | Topic |
@@ -88,7 +88,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [06 - Advanced JavaScript](./06-Advanced)
+### [06 - Advanced JavaScript](./06-Advanced/)
 *Learn modern JavaScript features and more advanced concepts.*
 
 | # | Topic |
@@ -106,7 +106,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [07 - Modules & Asynchronous JavaScript](./07-Async)
+### [07 - Modules & Asynchronous JavaScript](./07-Async/)
 *Understand how JavaScript handles asynchronous operations and APIs.*
 
 | # | Topic |
@@ -123,7 +123,7 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 
 ---
 
-### [08 - DOM Manipulation](./08-DOM)
+### [08 - DOM Manipulation](./08-DOM/)
 *Learn how JavaScript interacts with web pages.*
 
 | # | Topic |
@@ -142,16 +142,41 @@ This folder contains my work from Bro Code's 12-hour JavaScript course, organize
 | 69 | Image Slider |
 
 ## 📁 Folder Structure
-
 ```
 javascript-bro-code-course/
+
 ├── 01-JavaScript-Fundamentals/
+│   ├── README.md/
+│   ├── counter-program/
+│   └── random-number-generator/
+│
 ├── 02-Control-Flow/
-├── 03-Strings-Functions/
+│   ├── README.md
+│   └── ...
+│
+├── 03-Functions-Strings/
+│   ├── README.md
+│   └── ...
+│
 ├── 04-Arrays/
+│   ├── README.md
+│   └── ...
+│
 ├── 05-OOP/
+│   ├── README.md
+│   └── ...
+│
 ├── 06-Advanced/
+│   ├── README.md
+│   └── ...
+│
 ├── 07-Async/
+│   ├── README.md
+│   └── ...
+│
 ├── 08-DOM/
+│   ├── README.md
+│   └── ...
+│
 └── README.md
 ```

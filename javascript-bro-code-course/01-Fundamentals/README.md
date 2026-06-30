@@ -224,7 +224,7 @@ document.getElementById("mySubmit").onclick = function () {
 ```
 ---
 
-## Type conversion 
+## Type Conversion 
 
 ### Type Conversion
 ###### The process of converting a value from one data type to another (string, number, boolean).
@@ -305,8 +305,212 @@ console.log(b, typeof b); // output: false "boolean"
 
 ## Constants 
 
-## Counter program
+### Constant
+###### A constant is a variable whose value cannot be changed after it is assigned. Use the `const` keyword.
 
-## Math object
+```js
+const PI = 3.14159;  // cannot be reassigned
 
-## Random number generator
+console.log(PI); // output: 3.14159
+
+PI = 420.69; // TypeError: Assignment to constant variable.
+```
+
+#### Example: Calculate the Circumference of a Circle
+```html
+<h1 id="myH1">Enter the radius of a circle:</h1>
+
+<label>Radius:</label>
+<input type="text" id="myText"><br><br>
+
+<button id="mySubmit">Submit</button>
+
+<h3 id="myH3"></h3>
+```
+
+```js
+// Get the radius from a textbox, calculate the circumference, and display the result.
+
+const PI = 3.14159;
+
+let radius;
+let circumference;
+
+document.getElementById("mySubmit").onclick = function () {
+
+    radius = Number(document.getElementById("myText").value);
+
+    circumference = 2 * PI * radius;
+
+    document.getElementById("myH3").textContent = circumference + "cm";
+};
+```
+---
+
+### Constant Naming Convention
+###### By convention, constants are written in **UPPER_SNAKE_CASE** to make them easy to recognize.
+
+```js
+const PI = 3.14159;
+const MAX_USERS = 100;
+const APP_NAME = "My App";
+
+// This is a naming convention and is not required by JavaScript.
+```
+---
+
+## Math Object
+
+### Math Object
+###### The `Math` object is a built-in JavaScript object that provides mathematical constants and functions.
+```js
+// Example: Getting the value of pi
+console.log(Math.PI);  // output: 3.141592...
+```
+---
+
+### Rounding Numbers
+
+#### Math.round()
+###### Rounds a number to the nearest integer.
+
+```js
+console.log(Math.round(3.21));  // output: 3
+console.log(Math.round(3.99));  // output: 4
+```
+
+#### Math.floor()
+###### Always rounds down.
+
+```js
+console.log(Math.floor(3.99));  // output: 3
+```
+
+#### Math.ceil()
+###### Always rounds up.
+
+```js
+console.log(Math.ceil(4.12));  // output: 5
+```
+
+#### Math.trunc()
+###### Removes the decimal part (cuts off).
+
+```js
+console.log(Math.trunc(3.99));  // output: 3
+```
+---
+
+### Power & Roots
+
+#### Math.pow()
+###### Raises a number to a power.
+
+```js
+console.log(Math.pow(3, 2));  // output: 9
+// same as: 3 ** 2
+```
+
+#### Math.sqrt()
+###### Returns the square root of a number.
+
+```js
+console.log(Math.sqrt(81));  // output: 9
+```
+---
+
+### Logs & Trigonometry
+
+#### Math.log()
+###### Returns the natural logarithm of a number.
+
+```js
+console.log(Math.log(10));  // output: 2.302585092994046
+```
+
+#### Math.sin() / Math.cos() / Math.tan()
+###### Trigonometric functions (use radians).
+
+```js
+console.log(Math.sin(1));  // output: 0.8414709848078965
+console.log(Math.cos(1));  // output: 0.5403023058681398
+console.log(Math.tan(1));  // output: 1.5574077246549023
+```
+---
+
+### Absolute & Sign
+
+#### Math.abs()
+###### Returns the absolute value (distance from 0).
+
+```js
+console.log(Math.abs(-9));  // output: 9
+```
+
+#### Math.sign()
+###### Returns the sign of a number.
+
+```js
+console.log(Math.sign(-3));  // output: -1  (negative)
+console.log(Math.sign(5));   // output: 1   (positive)
+console.log(Math.sign(0));   // output: 0
+```
+---
+
+### Min & Max
+###### `Math.max()` returns the largest number, and `Math.min()` returns the smallest number.
+
+```js
+console.log(Math.max(3, 2, 1));  // output: 3
+console.log(Math.min(3, 2, 1));  // output: 1
+```
+---
+
+### Random Numbers
+###### `Math.random()` returns a number between 0 and 1 (not including 1).
+
+```js
+console.log(Math.random());  // output: 0.234567... (example)
+```
+
+#### Generating Random Integers
+
+- ##### Basic random number (0–5)
+    ```js
+    let randomInt = Math.floor(Math.random() * 6);
+    // Math.random() gives a number between 0 and 1 (example: 0.73)
+    // Multiplying by 6 changes the range to 0–5.999...
+    // Math.floor() removes the decimal part
+
+    console.log(randomInt);  // output: 0–5
+    ```
+
+- ##### Random number (1–6)
+    ```js
+    console.log(Math.floor(Math.random() * 6) + 1);  // output: 1–6 (any integer)
+    ```
+
+- ##### Random number (50–100)
+    ```js
+    const min = 50;
+    const max = 100;
+
+    let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    console.log(randomNum);  // output: 50–100 (any integer)
+    ```
+
+- ##### Key Formula
+    ```js
+    Math.floor(Math.random() * (max - min + 1)) + min;
+    ```
+---
+
+## Projects
+
+### ⭐ Counter Program Project
+###### A simple program that increases, decreases, and resets a number using buttons.
+
+### ⭐ Random Number Generator Project
+###### A program that generates a random number using `Math.random()` and math formulas.
+---

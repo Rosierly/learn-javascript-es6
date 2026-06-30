@@ -60,34 +60,34 @@ console.log(y);  // output: 100;
 
 ### Data Types
 
-#### - Number
-###### Stores numeric values (integers and floats).
-```js
-let age = 25; 
-let price = 10.99; 
-console.log(age);  // output: 25 
-console.log(price);  // output: 10.99
-```
+- #### Number
+    ###### Stores numeric values (integers and floats).
+    ```js
+    let age = 25; 
+    let price = 10.99; 
+    console.log(age);  // output: 25 
+    console.log(price);  // output: 10.99
+    ```
 
-#### - String
-###### Stores text (a series of characters).
-```js
-let firstName = "Bro"; 
-let favoriteFood = "Pizza"; 
+- #### String
+    ###### Stores text (a series of characters).
+    ```js
+    let firstName = "Bro"; 
+    let favoriteFood = "Pizza"; 
 
-console.log(firstName); 
-console.log(favoriteFood);
-```
+    console.log(firstName); 
+    console.log(favoriteFood);
+    ```
 
-#### - Boolean
-###### Stores either `true` or `false`.
-```js
-let online = true; 
-let isStudent = false; 
+- #### Boolean
+    ###### Stores either `true` or `false`.
+    ```js
+    let online = true; 
+    let isStudent = false; 
 
-console.log(online); 
-console.log(isStudent);
-```
+    console.log(online); 
+    console.log(isStudent);
+    ```
 ---
 
 ### Template Literals
@@ -229,79 +229,79 @@ document.getElementById("mySubmit").onclick = function () {
 ### Type Conversion
 ###### The process of converting a value from one data type to another (string, number, boolean).
 
-#### - Example 1: String to Number
-```js
-let age = window.prompt("How old are you?"); // always a string
-age = Number(age); // convert string to number 
-age += 1; 
+- #### Example 1: String to Number
+    ```js
+    let age = window.prompt("How old are you?"); // always a string
+    age = Number(age); // convert string to number 
+    age += 1; 
 
-console.log(age, typeof age);
-```
+    console.log(age, typeof age);
+    ```
 
-#### - Example 2: Number, String, Boolean Conversion Rules
-```js
-let x = "pizza"; 
-let y = "0"; 
-let a = "";
-let b;
-```
+- #### Example 2: Number, String, Boolean Conversion Rules
+    ```js
+    let x = "pizza"; 
+    let y = "0"; 
+    let a = "";
+    let b;
+    ```
 
-String → Number
-```js
-x = Number(x);
-console.log(x, typeof x);  // output: NaN "number"
+    String → Number
+    ```js
+    x = Number(x);
+    console.log(x, typeof x);  // output: NaN "number"
 
-// Explanation:
-// Non-numeric strings become NaN
-// NaN means “Not a Number”
-// The type is still "number"
-```
+    // Explanation:
+    // Non-numeric strings become NaN
+    // NaN means “Not a Number”
+    // The type is still "number"
+    ```
 
-String → Boolean
-```js
-x = Boolean(x);
-console.log(x, typeof x);  // output: true "boolean"
+    String → Boolean
+    ```js
+    x = Boolean(x);
+    console.log(x, typeof x);  // output: true "boolean"
 
-y = Boolean(y);
-console.log(y, typeof y);  // output: true "boolean"
+    y = Boolean(y);
+    console.log(y, typeof y);  // output: true "boolean"
 
-// Rule:
-// Any non-empty string → true
-```
+    // Rule:
+    // Any non-empty string → true
+    ```
 
-Empty String Conversion
-```js
-a = Number(a);
-console.log(a, typeof a);  // output: 0 "number"
+    Empty String Conversion
+    ```js
+    a = Number(a);
+    console.log(a, typeof a);  // output: 0 "number"
 
-// Rule:
-// "" → 0 when converted to Number
-// "" → false when converted to Boolean
-```
+    // Rule:
+    // "" → 0 when converted to Number
+    // "" → false when converted to Boolean
+    ```
 
-Undefined Conversion
-```js
-b = Number(b);
-console.log(b, typeof b); // output: NaN "number"
+    Undefined Conversion
+    ```js
+    b = Number(b);
+    console.log(b, typeof b); // output: NaN "number"
 
-b = String(b);
-console.log(b, typeof b); // output: "undefined" "string"
+    b = String(b);
+    console.log(b, typeof b); // output: "undefined" "string"
 
-b = Boolean(b);
-console.log(b, typeof b); // output: false "boolean"
+    b = Boolean(b);
+    console.log(b, typeof b); // output: false "boolean"
 
-// Rules:
-// undefined → NaN (Number)
-// undefined → "undefined" (String)
-// undefined → false (Boolean)
-```
+    // Rules:
+    // undefined → NaN (Number)
+    // undefined → "undefined" (String)
+    // undefined → false (Boolean)
+    ```
 
-#### Key Rules Summary
-- `"text"` → NaN (when converted to Number)
-- `""` → 0 (Number), false (Boolean)
-- Any non-empty string → true (Boolean)
-- `undefined` → NaN / "undefined" / false depending on conversion
----
+    #### Key Rules Summary
+    - `"text"` → NaN (when converted to Number)
+    - `""` → 0 (Number), false (Boolean)
+    - Any non-empty string → true (Boolean)
+    - `undefined` → NaN / "undefined" / false depending on conversion
+    ---
 
 ## Constants 
 

@@ -1,6 +1,6 @@
 # 01 - Fundamentals
 
-## JavaScript tutorial for beginners
+## 01 - JavaScript tutorial for beginners
 
 ### Console Output
 ###### `console.log()` prints messages to the browser's developer console.
@@ -38,7 +38,7 @@ document.getElementById("p2").textContent = `Welcome, ${fullName}!`;
 ```
 ---
 
-## Variables
+## 02- Variables
 
 ### Variable
 ###### A variable is a container that stores a value.
@@ -114,7 +114,7 @@ console.log(typeof online);     // "boolean"
 ```
 ---
 
-## Arithmetic Operators
+## 03 - Arithmetic Operators
 
 ### Arithmetic Operators
 ###### Operators used to perform calculations on values and variables.
@@ -191,7 +191,7 @@ console.log(newResult);  // output: 6
 ```
 ---
 
-## Accept user input
+## 04 - Accept user input
 
 ### 1. Easy Way (window prompt)
 ###### Uses a browser pop-up to get input from the user (simple but outdated).
@@ -224,7 +224,7 @@ document.getElementById("mySubmit").onclick = function () {
 ```
 ---
 
-## Type Conversion 
+## 05 - Type Conversion 
 
 ### Type Conversion
 ###### The process of converting a value from one data type to another (string, number, boolean).
@@ -303,7 +303,7 @@ document.getElementById("mySubmit").onclick = function () {
 - `undefined` → NaN / "undefined" / false depending on conversion
 ---
 
-## Constants 
+## 06 - Constants 
 
 ### Constant
 ###### A constant is a variable whose value cannot be changed after it is assigned. Use the `const` keyword.
@@ -359,7 +359,7 @@ const APP_NAME = "My App";
 ```
 ---
 
-## Math Object
+## 07 - Math Object
 
 ### Math Object
 ###### The `Math` object is a built-in JavaScript object that provides mathematical constants and functions.
@@ -508,9 +508,9 @@ console.log(Math.random());  // output: 0.234567... (example)
 
 ## Projects
 
-### ⭐ Counter Program Project
+### ⭐ 08 - Counter Program Project
 ###### A simple program that increases, decreases, and resets a number using buttons.
 
-### ⭐ Random Number Generator Project
+### ⭐ 09 - Random Number Generator Project
 ###### A program that generates three random numbers using `Math.random()` and math formulas.
 ---

@@ -177,13 +177,261 @@ mySubmit.onclick = function () {
 ```
 ---
 
----
-
 ## 11 - Checked property
+
+### `.checked` Property
+###### The `.checked` property determines the checked state of an HTML checkbox or radio button element. It returns:
+- ###### `true` if the element is checked.
+- ###### `false` if the element is not checked.
+```html
+<input type="checkbox" id="myCheckBox"/>
+<label for="myCheckBox">subscribe</label><br/><br/>
+
+<!-- To group the radio buttons so that only one can be selected at a time, 
+    give them the same name attribute (e.g., name="card"). -->
+<input type="radio" id="visaBtn" name="card"/>
+<label for="visaBtn">Visa</label><br/>
+<input type="radio" id="masterCardBtn" name="card"/>
+<label for="masterCardBtn">MasterCard</label><br/>
+<input type="radio" id="payPalBtn" name="card"/>
+<label for="payPalBtn">PayPal</label><br/><br/>
+
+<button type="submit" id="mySubmit">submit</button>
+
+<p id="subResult"></p>
+<p id="paymentResult"></p>
+```
+```js
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("payPalBtn");
+const mySubmitBtn = document.getElementById("mySubmit");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
+
+mySubmitBtn.onclick = function() {
+    if(myCheckBox.checked){
+        subResult.textContent = `You are subscribed!`;
+    }
+    else{
+        subResult.textContent = `You are NOT subscribed!`;
+    }
+
+    if(visaBtn.checked){
+        paymentResult.textContent = `You are paying with a Visa.`;
+    }
+    else if(masterCardBtn.checked){
+        paymentResult.textContent = `You are paying with a MasterCard.`;
+    }
+    else if(payPalBtn.checked){
+        paymentResult.textContent = `You are paying with Paypal.`;
+    }
+    else{
+        paymentResult.textContent = `You must select a payment type.`;
+    }
+}
+```
+---
 
 ## 12 - Ternary operator
 
+### Ternary Operator (`? :`)
+###### The ternary operator is a shorthand way to write simple `if...else` statements in JavaScript. It is commonly used when you want to assign a value to a variable based on a condition.
+
+#### Syntax
+```js
+condition ? valueIfTrue : valueIfFalse;
+// condition → The expression being evaluated.
+// valueIfTrue → Returned if the condition is true.
+// valueIfFalse → Returned if the condition is false.
+```
+```js
+let age = 21;
+
+let message = age >= 18 ? "You're an adult" : "You're a minor";
+
+console.log(message);  // output: You're an adult
+
+// ============= Equivalent `if...else` =============
+let message;
+
+if (age >= 18) {
+    message = "You're an adult";
+} else {
+    message = "You're a minor";
+}
+```
+#### Examples
+```js
+// Example 1: Greeting Based on Time
+let time = 16;
+
+let greeting = time < 12 
+    ? "Good morning!" 
+    : "Good afternoon!";
+
+console.log(greeting);  // output: Good afternoon!
+```
+```js
+// Example 2: Student Status
+let isStudent = true;
+
+let message = isStudent ? "You are a student" : "You are NOT a student";
+
+console.log(message);  // output: You are a student
+```
+```js
+// Example 3: Discount Calculation
+let purchaseAmount = 125;
+
+let discount = purchaseAmount >= 100 ? 10 : 0;
+// If the purchase amount is $100 or more, assign a 10% discount.
+// Otherwise, assign a 0% discount (no discount).
+
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`);  // output: Your total is $112.5
+```
+---
+
 ## 13 - Switches
+
+### Switch Statement (`switch`)
+###### The `switch` statement is an alternative to multiple `if...else if` statements. It compares different cases and executes the matching one.
+###### `switch` statements are often cleaner and easier to read when checking one variable against many possible values.
+
+#### Using `if...else if`
+```js
+let day = 1;
+
+if (day == 1) {
+    console.log("It is Monday.");
+}
+else if (day == 2) {
+    console.log("It is Tuesday.");
+}
+else if (day == 3) {
+    console.log("It is Wednesday.");
+}
+else if (day == 4) {
+    console.log("It is Thursday.");
+}
+else if (day == 5) {
+    console.log("It is Friday.");
+}
+else if (day == 6) {
+    console.log("It is Saturday.");
+}
+else if (day == 7) {
+    console.log("It is Sunday.");
+}
+else {
+    console.log(`${day} is not a day.`);
+}
+```
+#### Using a `switch`
+```js
+let day = 1;
+
+switch (day) {
+    case 1:
+        console.log("It is Monday.");
+        break;
+
+    case 2:
+        console.log("It is Tuesday.");
+        break;
+
+    case 3:
+        console.log("It is Wednesday.");
+        break;
+
+    case 4:
+        console.log("It is Thursday.");
+        break;
+
+    case 5:
+        console.log("It is Friday.");
+        break;
+
+    case 6:
+        console.log("It is Saturday.");
+        break;
+
+    case 7:
+        console.log("It is Sunday.");
+        break;
+
+    default:
+        console.log(`${day} is not a day.`);
+}
+```
+---
+
+### The `break` Keyword
+###### The `break` statement immediately exits the `switch` once a matching case has been executed.
+###### Without `break`, JavaScript continues executing every case below the matched one. This is called fall-through.
+```js
+let day = 1;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+        // Exits the switch statement once a matching case has been found.
+
+    case 2:
+        console.log("Tuesday");
+        break;
+}
+```
+---
+
+### The `default` Case
+###### The `default` case runs when none of the cases match the expression. Think of it as the `else` block of a switch statement.
+```js
+let day = 9;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+
+    default:
+        console.log(`${day} is not a day.`);
+}
+```
+---
+
+### Using `switch(true)` for Conditions
+###### `switch(true)` allows each case to contain a boolean expression. The first expression that evaluates to true is executed.
+```js
+let testScore = 33;
+let letterGrade;
+
+switch (true) {
+    case testScore >= 90:
+        letterGrade = "A";
+        break;
+
+    case testScore >= 80:
+        letterGrade = "B";
+        break;
+
+    case testScore >= 70:
+        letterGrade = "C";
+        break;
+
+    case testScore >= 60:
+        letterGrade = "D";
+        break;
+
+    default:
+        letterGrade = "F";
+}
+
+console.log(letterGrade);  // output: F
+```
+
 
 ## 17 - Logical operators
 

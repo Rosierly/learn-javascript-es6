@@ -26,7 +26,7 @@ console.log(userName.lastIndexOf("o"));  // output: 4
 ```
 ---
 
-### `length`
+### `length` property
 ###### Returns the total number of characters in a string.
 ```js
 let userName = "BroCode"; 
@@ -102,7 +102,7 @@ console.log(phoneNumber.replaceAll("-", ""));  // output: 1234567890
 ###### Pads the beginning of a string until it reaches the specified length.
 ```js
 let phoneNumber = "123-456-7890"; 
-console.log(phoneNumber.padStart(15, "0"));  // output: 00123-456-7890
+console.log(phoneNumber.padStart(15, "0"));  // output: 000123-456-7890
 ```
 ---
 
@@ -110,11 +110,77 @@ console.log(phoneNumber.padStart(15, "0"));  // output: 00123-456-7890
 ###### Pads the end of a string until it reaches the specified length.
 ```js
 let phoneNumber = "123-456-7890"; 
-console.log(phoneNumber.padEnd(15, "0"));  // output: 123-456-789000
+console.log(phoneNumber.padEnd(15, "0"));  // output: 123-456-7890000
 ```
 ---
 
 ## 15 - String slicing
+
+### `slice(start, end)`
+###### Creates a substring by extracting a portion of a string. The `start` index is included, but the `end` index is excluded.
+```js
+const fullName = "Bro Code"; 
+
+let firstName = fullName.slice(0, 3);
+let lastName = fullName.slice(4, 8);
+
+console.log(firstName);  // output: Bro 
+console.log(lastName);  // output: Code
+```
+---
+
+### `slice(start)`
+###### If the `end` index is not provided, `slice()` extracts the string from the starting index until the end.
+```js
+const fullName = "Bro Code"; 
+
+let lastName = fullName.slice(4); 
+
+console.log(lastName);  // output: Code
+```
+---
+
+### Using negative indices
+###### `slice()` supports negative indices, which count from the end of the string.
+```js
+const fullName = "Bro Code";
+
+let firstChar = fullName.slice(0, 1); 
+let lastChar = fullName.slice(-1); 
+let twoLastChar = fullName.slice(-2); 
+
+console.log(firstChar);    // output: B 
+console.log(lastChar);     // output: e 
+console.log(twoLastChar);  // output: de
+```
+---
+
+### Using `slice()` with `indexOf()`
+###### Combining `slice()` with `indexOf()` allows us to dynamically extract parts of a string without knowing the exact index.
+```js
+const fullName = "Broseph Code";
+
+let firstName = fullName.slice(0, fullName.indexOf(" ")); 
+let lastName = fullName.slice(fullName.indexOf(" ") + 1); 
+// indexOf(" ") finds the position of the space
+// +1 starts slicing after the space
+// remember: the start index is inclusive
+
+console.log(firstName);  // output: Broseph 
+console.log(lastName);   // output: Code
+```
+
+#### Example: Extracting a username and extension from an email
+```js
+const email = "Bro1@gmail.com"; 
+
+let userName = email.slice(0, email.indexOf("@")); 
+let extension = email.slice(email.indexOf("@") + 1); 
+
+console.log(userName);   // output: Bro1 
+console.log(extension);  // output: gmail.com
+```
+---
 
 ## 16 - Method chaining
 

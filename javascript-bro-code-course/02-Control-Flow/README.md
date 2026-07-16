@@ -445,7 +445,7 @@ console.log(letterGrade);  // output: F
 
 #### Examples
 ```js
-// ----------- Example 1 -----------
+// =========== Example 1 ===========
 const temp = 20;
 
 // Both conditions must be true
@@ -456,7 +456,7 @@ else {
     console.log("The weather is BAD.");
 }
 
-// ----------- Example 2 -----------
+// =========== Example 2 ===========
 const isSunny = true;
 
 // Reverses a boolean value
@@ -484,7 +484,7 @@ else {
 ```js
 const PI = 3.14;
 
-// ----------- Example 1 -----------
+// =========== Example 1 ===========
 // == compares values only
 if (PI == "3.14") {
     console.log("That is Pi.");
@@ -494,7 +494,7 @@ else {
 }
 // Output: That is Pi.
 
-// ----------- Example 2 -----------
+// =========== Example 2 ===========
 // !== compares both values and data types
 if (PI !== "3.14") {
     console.log("That is NOT Pi.");
@@ -508,6 +508,100 @@ else {
 ---
 
 ## 19 - While loops
+
+### `while` Loop
+###### Repeats a block of code as long as a condition is `true`.
+```js
+let username = "";
+
+// Keep asking for a username until valid input is entered
+while (username === "" || username === null) {
+    username = window.prompt("Enter your name");
+    // The prompt keeps appearing until the user enters a value
+}
+
+console.log(`Hello ${username}`);
+
+// Without the second condition (`username === null`),
+// clicking Cancel sets `username` to `null`.
+// Output: Hello null
+```
+---
+
+### Infinite Loop
+###### A loop that continues running forever because its condition never becomes `false`.
+```js
+let username = "";
+
+// Repeats while the username is empty
+while (username === "") {
+    console.log("You didn't enter your name.");
+}
+// This creates an infinite loop because `username` never changes.
+
+// This line executes only after the loop finishes, in this case never
+console.log(`Hello ${username}`);
+```
+---
+
+### `do...while` Loop
+###### Executes the code once, then repeats while the condition is `true`.
+```js
+let username;
+
+// The loop body runs at least once
+do {
+    username = window.prompt("Enter your name");
+} while (username === "" || username === null);
+
+console.log(`Hello ${username}`);
+```
+---
+
+### `while` vs. `do...while` Comparison
+```js
+// ============ While Loop ============
+let loggedIn = false;
+let username;
+let password;
+
+while (!loggedIn) {
+    username = window.prompt("Enter your username");
+    password = window.prompt("Enter your password");
+
+    if (username === "myUsername" && password === "myPassword") {
+        loggedIn = true;
+        console.log("You are logged in!");
+    }
+    else {
+        console.log("Invalid credentials! Please try again.");
+    }
+}
+
+// =========== Do..While Loop ===========
+let loggedIn = false;
+let username;
+let password;
+
+// The loop body runs at least once
+do {
+    username = window.prompt("Enter your username");
+    password = window.prompt("Enter your password");
+
+    if (username === "myUsername" && password === "myPassword") {
+        loggedIn = true;
+        console.log("You are logged in!");
+    }
+    else {
+        console.log("Invalid credentials! Please try again.");
+    }
+} while (!loggedIn);
+
+// =========== Difference ===========
+// A do...while loop executes the code once before checking the condition.
+// Even if `loggedIn` starts as `true`, the loop still runs one time.
+```
+---
 
 ## 20 - For loops
 

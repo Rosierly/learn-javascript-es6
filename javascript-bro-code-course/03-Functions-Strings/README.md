@@ -184,6 +184,31 @@ console.log(extension);  // output: gmail.com
 
 ## 16 - Method chaining
 
+### Method Chaining
+###### A programming technique that lets you call multiple methods on the same value in a single line of code.
+```js
+// Get user input and format the username 
+// (remove leading/trailing spaces & convert it to title case)
+let username = window.prompt("Enter your username:");
+
+// --------- Without Method Chaining ---------
+username = username.trim();
+
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+
+let extraChars = username.slice(1);
+extraChars = extraChars.toLowerCase();
+
+username = letter + extraChars;
+console.log(username);
+
+// --------- With Method Chaining ---------
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+console.log(username);
+```
+---
+
 ## 22 - Functions
 
 ## 23 - Variable scope

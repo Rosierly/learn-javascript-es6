@@ -431,9 +431,44 @@ switch (true) {
 
 console.log(letterGrade);  // output: F
 ```
-
+---
 
 ## 17 - Logical operators
+
+### Logical Operators
+###### Used to combine or manipulate boolean (`true` or `false`) values.
+
+#### Operators
+- AND = `&&`
+- OR  = `||`
+- NOT = `!`
+
+#### Examples
+```js
+// ----------- Example 1 -----------
+const temp = 20;
+
+// Both conditions must be true
+if (temp > 0 && temp <= 30) {
+    console.log("The weather is GOOD.");
+}
+else {
+    console.log("The weather is BAD.");
+}
+
+// ----------- Example 2 -----------
+const isSunny = true;
+
+// Reverses a boolean value
+if (!isSunny) {
+    console.log("It is CLOUDY.");
+}
+else {
+    console.log("It is SUNNY.");
+}
+```
+---
+
 
 ## 18 - Strict equality
 

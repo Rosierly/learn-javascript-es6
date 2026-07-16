@@ -469,8 +469,43 @@ else {
 ```
 ---
 
-
 ## 18 - Strict equality
+
+### Operators
+- `=` Assignment operator
+- `==` Equality operator (compares values)
+- `===` Strict equality operator (compares values and data types)
+- `!=` Inequality operator
+- `!==` Strict inequality operator
+---
+
+### Strict Equality
+###### Compares both the value and the data type of two operands.
+```js
+const PI = 3.14;
+
+// ----------- Example 1 -----------
+// == compares values only
+if (PI == "3.14") {
+    console.log("That is Pi.");
+}
+else {
+    console.log("That is NOT Pi.");
+}
+// Output: That is Pi.
+
+// ----------- Example 2 -----------
+// !== compares both values and data types
+if (PI !== "3.14") {
+    console.log("That is NOT Pi.");
+}
+else {
+    console.log("That is Pi.");
+}
+// Output: That is NOT Pi.
+```
+> **Note:** Note: User input from `window.prompt()` is always stored as a string, so `==` can be useful when comparing input values.
+---
 
 ## 19 - While loops
 

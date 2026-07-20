@@ -605,6 +605,112 @@ do {
 
 ## 20 - For loops
 
+## `for` loops
+###### A `for` loop repeats a block of code a limited number of times. It is commonly used when you know exactly how many times you want the loop to run.
+
+#### Syntax
+```js
+for (initialization; condition; increment/decrement) {
+    // Code to execute
+}
+```
+| Part | Description |
+|------|-------------|
+| `initialization` | Runs once before the loop starts. |
+| `condition` | The loop continues while this condition is `true`. |
+| `increment/decrement` | Updates the loop variable after each iteration. |
+
+
+#### Examples
+- ##### Basic `for` Loop
+    ```js
+    for (let i = 0; i <= 2; i++) {
+        console.log("Hello");
+        console.log(i);
+    }
+    // Output:
+    // Hello
+    // 0
+    // Hello
+    // 1
+    // Hello
+    // 2
+    ```
+- ##### Increment by More Than 1
+    ```js
+    for (let i = 1; i <= 10; i += 2) {
+        console.log(i);
+    }
+    // Output:
+    // 1
+    // 3
+    // 5
+    // 7
+    // 9
+    ```
+- ##### Countdown
+    ```js
+    for (let i = 10; i > 0; i--) {
+        console.log(i);
+    }
+
+    console.log("HAPPY NEW YEAR!");
+    // Output:
+    // 10
+    // 9
+    // 8
+    // 7
+    // 6
+    // 5
+    // 4
+    // 3
+    // 2
+    // 1
+    // HAPPY NEW YEAR!
+    ```
+---
+
+### `continue` keyword
+###### The `continue` keyword skips the current iteration and immediately moves to the next one.
+```js
+for (let i = 1; i <= 20; i++) {
+
+    if (i === 13) {
+        continue;
+    }
+
+    console.log(i);
+}
+// `13` is skipped because `continue` tells the loop to ignore the rest of that iteration.
+```
+---
+
+### `break` keyword
+###### The `break` keyword exits the loop completely.
+```js
+for (let i = 1; i <= 20; i++) {
+
+    if (i === 13) {
+        break;
+    }
+
+    console.log(i);
+}
+// The loop stops as soon as `i` becomes `13`.
+```
+---
+
+### Quick Reference
+| Statement | Meaning |
+|-----------|---------|
+| `i++` | Increase by 1 |
+| `i--` | Decrease by 1 |
+| `i += 2` | Increase by 2 |
+| `continue` | Skip the current iteration |
+| `break` | Exit the loop immediately |
+---
+
+
 ## Projects
 
 ### 21 -  ⭐ Number guessing game

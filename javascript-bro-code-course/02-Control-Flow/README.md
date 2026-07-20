@@ -714,3 +714,5 @@ for (let i = 1; i <= 20; i++) {
 ## Projects
 
 ### 21 -  ⭐ Number guessing game
+###### A game where the user guesses a randomly generated number until they find the correct answer with input validation and attempt tracking.
+---

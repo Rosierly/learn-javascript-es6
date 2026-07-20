@@ -152,7 +152,7 @@ javascript-bro-code-course/
 │
 ├── 02-Control-Flow/
 │   ├── README.md
-│   └── ...
+│   └── number-guessing-game/
 │
 ├── 03-Functions-Strings/
 │   ├── README.md

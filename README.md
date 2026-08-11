@@ -2,8 +2,7 @@
 
 This repository contains my JavaScript learning journey through multiple courses.
 
-I originally began with Angela Yu's JavaScript ES6 course on Autorium. After the platform experienced extended server issues that prevented me from continuing, I moved on to another JavaScript course.
-
+I originally began with [Angela Yu's JavaScript ES6 course](https://auditorium.ai/courses/BdBKnlZyxEvgNFNv10fo23pfrceETQ0A) on Auditorium. After the platform experienced extended server issues that prevented me from continuing, I moved on to [Bro Code's Full JavaScript Course](https://www.youtube.com/watch?v=lfmg-EJ8gm4) on YouTube.
 
 ## Courses
 
@@ -12,7 +11,7 @@ I originally began with Angela Yu's JavaScript ES6 course on Autorium. After the
 - Status: Incomplete
 - Progress: Completed the introductory lessons and the first mini-project before the course became unavailable.
 
-**Detailed README:** [javascript-es6-angela-yu-course](./javascript-es6-angela-yu-course)
+**Course Content:** [View the detailed README](./javascript-es6-angela-yu-course)
 
 ---
 
@@ -20,7 +19,7 @@ I originally began with Angela Yu's JavaScript ES6 course on Autorium. After the
 
 - Status: In Progress
 
-**Detailed README:** [javascript-bro-code-course](./javascript-bro-code-course)
+**Course Content:** [View the detailed README](./javascript-bro-code-course)
 
 
 ## What this repository includes
